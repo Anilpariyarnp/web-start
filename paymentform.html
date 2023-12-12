@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="paymentform.css">
+  </head>
+
+  <body>
+    <div class="container">
+
+      <h1 class="main_heading">Payment Form</h1>
+      <hr>
+      <h1>User Information</h1>
+      <form>
+
+        <p>Name: <input placeholder="first name middle name last name" type="text" name="name" required></p>
+        <fieldset>
+          <legend>Gender</legend>
+          <p>Male:<input type="radio" name="Gender" id="Male" required>
+            Female:<input type="radio" name="Gender" id="Female" required></p>
+        </fieldset>
+        <p>Address: <textarea placeholder="Enter your address" name="address" id="address" cols="5" rows="2"></textarea>
+        </p>
+        <p>Email: <input placeholder="paabcd2efgh@gamil.com" type="email" name="email" id="email">
+        </p>
+        <p>Number: <input placeholder="98xxxxxxxx" type="number" name="number" id="number"> </p>
+        <h2>Payment Information</h2>
+        <p>Card type:
+          <select name="Card_type" id="Card_type">
+            <option value="">--Select the Card type--</option>
+            <option value="visa">Visa</option>
+            <option value="rupay">rupay</option>
+            <option value="mastercard">Mastercard</option>
+        </p>
+        </select>
+        <p>
+          Card Number<input placeholder="xxxx" type="number" name="number" id="Card_number">
+        </p>
+        <p>
+          Expiration Date: <input placeholder="xxxx-xx-xx" type="date" name="exp_date" id="exp_date">
+        </p>
+        <p>
+          CVV
+          <input placeholder="Enter Your CV" type="password" name="cvv" id="cvv">
+        </p>
+        <p>
+          <input class="input" type="submit" name="">
+        </p>
+
+      </form>
+    </div>
+  </body>
+
+</html>

@@ -1,0 +1,16 @@
+h1{
+    
+    text-align: center;
+    padding: 10px 4px 5px 6px ;
+    background-color: gray;
+    height: 150px;
+   
+}
+footer{
+    display: grid;
+} 
+h4::first-line{
+    color: red;
+    font-style: italic;
+    font-size: larger;
+}
