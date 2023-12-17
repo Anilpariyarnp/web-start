@@ -18,6 +18,10 @@
         width: 200px;
         border: 1px solid black;
         padding: 10px;
+        overflow: hidden;
+        word-wrap: break-word;
+        word-break: break-all;
+        hyphens: manual;
       }
 
       .bx2 {
@@ -42,7 +46,14 @@
 
   <body>
     <div class="bx1">
-      <p>Hello World</p>
+      <p>Lorem ipsum dolor sit amet jsgdjsgdjsjhsjhgsconsectetur adipisicing elit. Iusto adipisci dolorem atque
+        dignissimos consequatur
+        placeat sapiente? Quas blanditiis, ipsam veniam in laboriosam voluptate aut quo reiciendis illo, delectus
+        similique, hic quos officiis? Nulla aliquid iste, maiores aspernatur qui amet, libero iusto cum, rerum mollitia
+        perspiciatis nostrum quidem voluptatem corporis? Doloremque minus sint exercitationem laborum distinctio est
+        provident asperiores. Itaque nobis molestiae magnam iusto ea ad vitae, quo veniam pariatur amet nam corrupti?
+        Adipisci, dolore nam unde voluptas cupiditate deleniti, enim veritatis architecto inventore aut sit illo, vero
+        voluptatem commodi vitae aperiam pariatur sed hic consequatur iusto. Accusantium omnis dolorem deleniti!</p>
     </div>
     <div class="bx2">
       <p>Hello World</p>
@@ -50,6 +61,67 @@
     <div class="bx3">
       <p>Hello World</p>
     </div>
+    <!DOCTYPE html>
+    <html lang="en">
+
+      <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+
+        <style>
+          * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+          }
+
+          .bx1 {
+            width: 200px;
+            height: 50px;
+            background-color: red;
+            display: inline-block;
+          }
+
+          .bx2 {
+            width: 200px;
+            height: 50px;
+            background-color: rgb(0, 123, 255);
+            display: inline-block;
+          }
+
+          .g {
+            background-color: brown;
+            display: block;
+          }
+
+          .c {
+            background-color: yellowgreen;
+            display: block;
+          }
+        </style>
+
+      </head>
+
+      <body>
+
+
+        <div class="bx1">
+          box1
+        </div>
+        <div class="bx2">
+          box2
+        </div>
+
+        <span class="g">This is span inline</span>
+
+
+        <span class="c">This is span inline1</span>
+
+
+      </body>
+
+    </html>
   </body>
 
 </html>
