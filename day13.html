@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      .box {
+
+        max-width: 450px;
+        border: 2px solid black;
+        display: grid;
+        grid-template-columns: 100px 100px;
+        grid-template-rows: 120px 120px;
+
+
+
+      }
+
+      .bx1 {
+        border: 1px solid black;
+        height: 100px;
+        width: 100px;
+        background-color: red;
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: 2fr 1fr 1fr;
+
+      }
+
+      .bx2 {
+        border: 1px solid rgb(0, 0, 0);
+        height: 100px;
+        width: 100px;
+        background-color: wheat;
+
+
+      }
+
+      .bx3 {
+        border: 1px solid rgb(0, 0, 0);
+        height: 100px;
+        width: 100px;
+        background-color: green;
+        /* flex-grow: 2; */
+        /* float: left; */
+      }
+
+      .bx4 {
+        border: 1px solid black;
+        height: 100px;
+        width: 100px;
+        background-color: red;
+        justify-content: space-around;
+      }
+
+      .bx5 {
+        border: 1px solid rgb(0, 0, 0);
+        height: 100px;
+        width: 100px;
+        background-color: wheat;
+
+
+      }
+
+      .bx6 {
+        border: 1px solid rgb(0, 0, 0);
+        height: 100px;
+        width: 100px;
+        background-color: green;
+        flex-grow: 2;
+        /*  float: left; */
+        flex-wrap: wrap-reverse;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="box">
+      <div class="bx1"></div>
+      <div class="bx2"></div>
+      <div class="bx3"></div>
+      <div class="bx4"></div>
+      <div class="bx5"></div>
+      <div class="bx6"></div>
+    </div>
+  </body>
+
+</html>

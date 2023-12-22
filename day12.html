@@ -1,0 +1,247 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  </head>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+
+    }
+
+    .bigbox1 {
+
+      max-width: 800px;
+      margin: 20px;
+      overflow: hidden;
+
+    }
+
+    .bigbox {
+      width: calc(33.33% - 20px);
+      float: left;
+      margin: 10px;
+      background-color: blue;
+      padding: 20px;
+      /* box-sizing: border-box; */
+    }
+  </style>
+
+  <body>
+    <div class="bigbox1">
+      <div class="bigbox"></div>
+      <div class="bigbox"></div>
+      <div class="bigbox"></div>
+      <div class="bigbox"></div>
+      <div class="bigbox"></div>
+      <div class="bigbox"></div>
+    </div>
+  </body>
+
+</html> -->
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Layout</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            overflow: hidden;
+        }
+
+        .box {
+            width: calc(33.33% - 20px);
+            float: left;
+            margin: 10px;
+            background-color: #f0f0f0;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="box">
+        <p>This is the content of box 1.</p>
+    </div>
+    <div class="box">
+        <p>This is the content of box 2.</p>
+    </div>
+    <div class="box">
+        <p>This is the content of box 3.</p>
+    </div>
+    <div class="box">
+        <p>This is the content of box 4.</p>
+    </div>
+    <div class="box">
+        <p>This is the content of box 5.</p>
+    </div>
+    <div class="box">
+        <p>This is the content of box 6.</p>
+    </div>
+</div>
+
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      .box {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+      }
+
+      .bono,
+      .edge,
+      .adam,
+      .larry {
+        padding: 20px;
+        margin-bottom: 42px;
+        width: 20%;
+      }
+
+      .bono h3,
+      .edge h3,
+      .adam h3,
+      .larry h3 {
+        font-size: var(--font-size-md);
+        line-height: 1.2;
+        margin-bottom: 2px;
+      }
+
+      .bono p,
+      .edge p,
+      .adam p,
+      .larry p {
+        font-size: var(--font-size-base);
+        line-height: 1.7
+      }
+
+      .bono {
+        background-color: #4081ec
+      }
+
+      .edge {
+        background-color: #ffbb33
+      }
+
+      .adam {
+        background-color: #f73345
+      }
+
+      .larry {
+        background-color: #e0e0e0
+      }
+
+      .bono h1,
+      .bono p,
+      .adam h1,
+      .adam p {
+        color: #fff
+      }
+
+      .edge h1,
+      .edge p {
+        color: #000
+      }
+
+      .larry h1,
+      .larry p {
+        color: #000
+      }
+
+      @media (max-width: 767px) {
+
+        .bono,
+        .edge,
+        .adam,
+        .larry {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="box">
+      <div class="bono">
+        <h1>Bono</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus doloribus adipisci quidem voluptate,
+          officiis dolorum quod? Reiciendis, a. Officiis mollitia architecto fugiat. Aspernatur aliquam animi quam
+          magnam labore. Praesentium, quia.</p>
+      </div>
+      <div class="edge">
+        <h1>Edge</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus doloribus adipisci quidem voluptate,
+          officiis dolorum quod? Reiciendis, a. Officiis mollitia architecto fugiat. Aspernatur aliquam animi quam
+          magnam labore. Praesentium, quia.</p>
+      </div>
+      <div class="adam">
+        <h1>Adam</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus doloribus adipisci quidem voluptate,
+          officiis dolorum quod? Reiciendis, a. Officiis mollitia architecto fugiat. Aspernatur aliquam animi quam
+          magnam labore. Praesentium, quia.</p>
+      </div>
+      <div class="larry">
+        <h1>Larry</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus doloribus adipisci quidem voluptate,
+          officiis dolorum quod? Reiciendis, a. Officiis mollitia architecto fugiat. Aspernatur aliquam animi quam
+          magnam labore. Praesentium, quia.</p>
+      </div>
+      <div class="bono">
+        <h1>Bono</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus doloribus adipisci quidem voluptate,
+          officiis dolorum quod? Reiciendis, a. Officiis mollitia architecto fugiat. Aspernatur aliquam animi quam
+          magnam labore. Praesentium, quia.</p>
+      </div>
+      <div class="edge">
+        <h1>Edge</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus doloribus adipisci quidem voluptate,
+          officiis dolorum quod? Reiciendis, a. Officiis mollitia architecto fugiat. Aspernatur aliquam animi quam
+          magnam labore. Praesentium, quia.</p>
+      </div>
+      <div class="adam">
+        <h1>Adam</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus doloribus adipisci quidem voluptate,
+          officiis dolorum quod? Reiciendis, a. Officiis mollitia architecto fugiat. Aspernatur aliquam animi quam
+          magnam labore. Praesentium, quia.</p>
+      </div>
+      <div class="larry">
+        <h1>Larry</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus doloribus adipisci quidem voluptate,
+          officiis dolorum quod? Reiciendis, a. Officiis mollitia architecto fugiat. Aspernatur aliquam animi quam
+          magnam labore. Praesentium, quia.</p>
+      </div>
+
+
+    </div>
+
+  </body>
+
+</html>
