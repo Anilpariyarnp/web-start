@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      .container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-auto-rows: minmax(100px, auto);
+        grid-auto-columns: minmax(100px, auto);
+        /* grid-gap: 10px; */
+        /* grid-column: 2/4; */
+        margin: 20px;
+        grid-gap: 5px;
+      }
+
+      .items1 {
+        background-color: lightblue;
+        border: 1px solid grey;
+        border-radius: 3px;
+        grid-row-start: 1;
+        grid-row-end: 4;
+
+      }
+
+      .items2 {
+        background-color: lightblue;
+        border: 1px solid grey;
+        border-radius: 3px;
+        grid-column-start: 2;
+        grid-column-end: 4;
+
+      }
+
+      .items3 {
+        background-color: lightblue;
+        border: 1px solid grey;
+        border-radius: 3px;
+
+      }
+
+      .items4 {
+        background-color: lightblue;
+        border: 1px solid grey;
+        border-radius: 3px;
+        grid-row-start: 2;
+        grid-row-end: 3;
+
+      }
+
+      .items5 {
+        background-color: lightblue;
+        border: 1px solid grey;
+        border-radius: 3px;
+        grid-row-start: 2;
+        grid-row-end: 3;
+
+      }
+
+      .items6 {
+        background-color: lightblue;
+        border: 1px solid grey;
+        border-radius: 3px;
+        grid-row-start: 2;
+        grid-row-end: 4;
+
+      }
+
+      .items7 {
+        background-color: lightblue;
+        border: 1px solid grey;
+        border-radius: 3px;
+
+      }
+
+      .items8 {
+        background-color: lightblue;
+        border: 1px solid grey;
+        border-radius: 3px;
+
+      }
+
+      .items1,
+      .items2,
+      .items6 {
+        background-color: lightgreen;
+      }
+
+      .items3,
+      .items5,
+      .items7 {
+        background-color: red;
+      }
+
+      .items4,
+      .items8 {
+        background-color: yellow;
+      }
+    </style>
+  </head>
+
+  <body>
+
+  </body>
+  <div class="container">
+    <div class="items1">box1</div>
+    <div class="items2">box 2</div>
+    <div class="items3">box 3</div>
+    <div class="items4">box 4</div>
+    <div class="items5">box 5</div>
+    <div class="items6">box 6</div>
+    <div class="items7">box 7</div>
+    <div class="items8">box 8</div>
+
+
+  </div>
+
+</html>
